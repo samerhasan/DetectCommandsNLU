@@ -19,7 +19,7 @@ grammar1 = CFG.fromstring("""
   Contacts -> "Shadi" | "Ahmad" | "Ali" | "Samer" "Hassan" | "Hassan"
 """)
 
-sent = "please send Samer Hassan an sms that says".split()
+sent = "please send Ahmad an sms that says".split()
 rd_parser = RecursiveDescentParser(grammar1)
 for tree in rd_parser.parse(sent):
     print(tree)
